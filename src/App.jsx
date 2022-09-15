@@ -1,29 +1,28 @@
 import React, { useState } from 'react';
-import DisplayEntries from './Components/DisplayPosts/DisplayPosts';
-import AddEntryForm from './Components/AddEntry/AddEntryForm';
-import './App.css';
-
+import Post from './Components/DisplayPosts/Post'
+import CreatePost from './Components/DisplayPosts/CreatePost'
 
 function App() {
 
-  const [entries, setEntries] = useState([{weight: 175, date: '11-23-2021'}, {weight: 176, date: '11-24-2021'}])
+  const [posts, setPosts] = useState([])
 
-  function addNewEntry(entry){
-    let tempEntries = [...entries, entry];
-    setEntries(tempEntries);
+  function addNewPost(post){
+    let tempPost = [...posts, post];
+
+    setPosts(tempPost)
   }
 
   return (
     <div className='container-fluid'>
       <div className='row'>
-        <h5 style={{margin: '1em'}}>Social
-        <small className='text-muted'>Feed</small></h5>
-        <div className='container-fluid'>
+        <div className='col-lg-6'>
           <div className='border-box'>
-            <DisplayEntries parentEntries={entries} />
+            <CreatePost addNewPostProperty={addNewPost}/>
           </div>
+        </div>
+        <div className='col-lg-6'>
           <div className='border-box'>
-            <AddEntryForm addNewEntryProperty={addNewEntry} />
+            <Post posts={posts}/>
           </div>
         </div>
       </div>
