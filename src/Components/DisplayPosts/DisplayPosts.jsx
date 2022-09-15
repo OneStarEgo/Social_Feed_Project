@@ -3,12 +3,11 @@ import React, { useState } from 'react';
 
 const DisplayEntries = (props) => {
     return ( 
-        <table>
+        <table className='table'>
             <thead>
             <tr>
-                <th>Entry Number</th>
-                <th>Weight</th>
-                <th>Date</th>
+                <th>Name</th>
+                <th>Post</th>
             </tr>
             </thead>
             <tbody>
