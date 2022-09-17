@@ -1,3 +1,4 @@
+import LikeDislikeButton from "./LikeDislikeButtons";
 
 const Post = (props) => {
     return ( 
@@ -15,7 +16,7 @@ const Post = (props) => {
                             <div>{entry.name}</div>
                             <br></br>
                             <div>{entry.post}</div>
-                            
+                            <LikeDislikeButton />
                         </div>
                     );
                 })}

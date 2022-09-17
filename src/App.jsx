@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Post from './Components/DisplayPosts/Post'
-import CreatePost from './Components/DisplayPosts/CreatePost'
+import Post from './Components/PostF/Post'
+import CreatePost from './Components/CreatePosts/CreatePost'
 
 function App() {
 
