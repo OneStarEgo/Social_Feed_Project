@@ -11,12 +11,12 @@ const Post = (props) => {
             <tbody>
                 {props.posts.map((entry, index) => {
                     return (
-                        <tr key={index}>
-                            <td>{entry.name}</td>
-                            <li>
-                            <td>{entry.post}</td>
-                            </li>
-                        </tr>
+                        <div key={index}>
+                            <div>{entry.name}</div>
+                            <br></br>
+                            <div>{entry.post}</div>
+                            
+                        </div>
                     );
                 })}
             </tbody>
