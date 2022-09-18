@@ -1,4 +1,4 @@
-import LikeDislikeButton from "./LikeDislikeButtons";
+import LikeDislikeButton from "../LikeDislikeButton/LikeDislikeButtons";
 
 const Post = (props) => {
     return ( 

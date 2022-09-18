@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './LikeDislikeButtons.css'
 
 
 const LikeDislikeButton = (props) => {

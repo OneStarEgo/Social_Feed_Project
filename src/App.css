@@ -1,7 +1,17 @@
-.border-box {
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    margin: 1em;
-    padding: 1em;
+div header {
+    background-color: white;
+    box-shadow: 3px 3px 7px lightgray;
+    border-style: none;
+    padding: 1rem;
+    text-decoration: none;
 }
+
+.border-box {
+    background-color: white;
+    margin: 5rem;
+    box-shadow: 4px 4px 8px grey;
+    border-radius: 25px;
+    padding: 20px;
+    text-decoration: none;
+}
+
